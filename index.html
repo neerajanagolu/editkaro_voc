@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Welcome!</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800%7CPoppins:300,400,500,600,700%7CMuli:200,300,400,500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader" id="loading">
+      <div class="preloader-body">
+        <div id="loading-center-object">
+          <div class="object" id="object_four"></div>
+          <div class="object" id="object_three"></div>
+          <div class="object" id="object_two"></div>
+          <div class="object" id="object_one"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header--><img class="banner banner-top" src="images/background1(1920x72).jpeg" alt="" height="0"/></a>
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="10px" data-xl-stick-up-offset="10px" data-xxl-stick-up-offset="10px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"> <a class="brand" href="index.html"><img src="images/logo-default-399x82.png" alt="" width="199" height="41"/></a></div>
+              </div>
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="portfolio.html">portfolio</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                  </li>
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                  </li>
+                </ul>
+                <div class="rd-navbar-tel">
+                  <p>Call Now</p><a href="tel:#">+91-827983081322</a>
+                </div>
+              </div>
+              <div class="rd-navbar-element"><a class="button button-sm button-default-outline button-winona" href="contacts.html">Get a Quote</a>
+              </div>
+              <div class="rd-navbar-dummy"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- FScreen-->
+      <div id="subscribe-section" class="layout-4">
+        <div class="layout-4-item-right">
+          <div class="box-custom-2 bg-accent">
+            <div class="box-custom-2-bg bg-gray-900"><img class="map-image" src="images/world-map-light.svg" alt=""></div>
+            <div class="box-custom-2-inner">
+              <h2 class="wow fadeIn">Marketing That Generates Results</h2>
+              <h4 class="text-default wow fadeIn" data-wow-delay=".2s">Get the free checklist with 7 ways to improve your business.</h4>
+              <form class="rd-form rd-mailform form-shadow block-11 ot50" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <form id="subscribe-form" onsubmit="return false;">
+                      <div class="form-wrap">
+                          <label class="form-label text-center" for="subscribe-form-email">Your E-mail</label>
+                          <input class="form-input text-center" id="subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                      </div>
+                      <div class="form-button">
+                          <button class="button button-block button-primary button-winona"  type="submit" onclick="submitForm()">Get Checklist</button>
+                      </div>
+                  </form>
+              </div>
+          
+              <script>
+                function isValidEmail(email) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailRegex.test(email);
+                }
+                
+                function submitForm() {
+                    const email = document.getElementById('subscribe-form-email').value;
+                    if (email && isValidEmail(email)) {
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbwUJdi26PGh6ZI4HHgB5xDb75kSGXAEUDyI6O8ZNB9OKueSyO78ZbAkqYch6XcMSSq4Nw/exec';
+                        
+                        fetch(scriptURL, {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            cache: 'no-cache',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ email: email })
+                        })
+                        .then(response => {
+                            alert('Thank you for subscribing! Your email has been recorded.');
+                            // document.getElementById('subscribe-form').reset();
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            alert('An error occurred. Please try again later.');
+                        });
+                    } 
+                }
+                </script>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="layout-4-item-left"><img src="images/Team(654x515).jpeg" alt="" width="654" height="515"/>
+        </div>
+      </div>
+      <!-- Our Solutions-->
+<section id= "sol-services" class="section section-lg bg-gray-100 text-center" id="solutions">
+  <div class="container">
+    <h3 class="wow fadeIn" data-wow-delay=".1s">Professional Marketing Solutions</h3>
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".1s">
+        <!-- Box Modern-->
+        <article class="box-modern" data-anime="circles-1">
+          <div class="box-modern-media">
+            <div class="box-modern-icon mdi mdi-comment-text"></div>
+            <div class="box-modern-circle box-modern-circle-1"></div>
+            <div class="box-modern-circle box-modern-circle-2"></div>
+          </div>
+          <p class="box-modern-title">Social Media Management</p>
+          <div class="box-modern-text">
+            <p>Enhance your brand's presence with strategic social media management.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".2s">
+        <!-- Box Modern-->
+        <article class="box-modern" data-anime="circles-2">
+          <div class="box-modern-media">
+            <div class="box-modern-icon mdi mdi-chart-pie"></div>
+            <div class="box-modern-circle box-modern-circle-1"></div>
+            <div class="box-modern-circle box-modern-circle-2"></div>
+          </div>
+          <p class="box-modern-title">Analytics & Research</p>
+          <div class="box-modern-text">
+            <p>A&R services of LeadGen guarantee successful marketing results.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".3s">
+        <!-- Box Modern-->
+        <article class="box-modern" data-anime="circles-1">
+          <div class="box-modern-media">
+            <div class="box-modern-icon mdi mdi-basket"></div>
+            <div class="box-modern-circle box-modern-circle-1"></div>
+            <div class="box-modern-circle box-modern-circle-2"></div>
+          </div>
+          <p class="box-modern-title">Sales Growth</p>
+          <div class="box-modern-text">
+            <p>Our innovative marketing tools provide great sales growth.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-3 col-md-6 col-6 wow fadeIn" data-wow-delay=".4s">
+        <!-- Box Modern-->
+        <article class="box-modern" data-anime="circles-3">
+          <div class="box-modern-media">
+            <div class="box-modern-icon mdi mdi-video"></div>
+            <div class="box-modern-circle box-modern-circle-1"></div>
+            <div class="box-modern-circle box-modern-circle-2"></div>
+          </div>
+          <p class="box-modern-title">Video Editing</p>
+          <div class="box-modern-text">
+            <p>Enhance your brand's message with professional video editing services.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Counters-->
+      <section class="section section-md text-center">
+        <div class="container">
+          <div class="layout-bordered-1">
+            <div class="layout-bordered-1-item">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main">
+                  <div class="counter">10</div><span class="small text-primary">+</span>
+                </div>
+                <h4 class="counter-classic-title">Successful Projects</h4>
+              </article>
+            </div>
+            <div class="layout-bordered-1-item">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main">
+                  <div class="counter">200</div><span class="small text-primary">%</span>
+                </div>
+                <h4 class="counter-classic-title">Achieved ROI</h4>
+              </article>
+            </div>
+            <div class="layout-bordered-1-item">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main">
+                  <div class="counter">3</div><span class="small text-primary">X</span>
+                </div>
+                <h4 class="counter-classic-title">Increased Profits</h4>
+              </article>
+            </div>
+            <div class="layout-bordered-1-item">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main">
+                  <div class="counter">10</div><span class="small text-primary">+</span>
+                </div>
+                <h4 class="counter-classic-title">Million Views Generated</h4>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Do-->
+      <section class="section section-xl bg-gray-900" id="what-we-do">
+        <div class="container">
+          <div class="row row-50 justify-content-center justify-content-xl-between align-items-center">
+            <div class="col-sm-10 col-lg-5">
+              <h3>Let Us Help You Attract More Clients</h3>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line tabs-line_1 block-8" id="tabs-1">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab"><span>What You Get</span></a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab"><span>How We Work</span></a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-1-1">
+                    <p class="big">Working with us you can lift the web reputation of your company higher than ever. We can offer you all advantages of e-marketing including:</p>
+                    <ul class="list-marked list-marked_secondary">
+                      <li>Faster response to the end user;</li>
+                      <li>Increased exposure of products and services;</li>
+                      <li>Boundless universal accessibility.</li>
+                    </ul><a class="button button-default button-winona" href="about-us.html">Learn More</a>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-2">
+                    <p class="big">Our agency works to ensure the best quality of marketing solutions for our clients and their businesses. Our approach features:</p>
+                    <ul class="list-marked list-marked_secondary">
+                      <li>Initial consultation with the client;</li>
+                      <li>Planning & analysis;</li>
+                      <li>Marketing campaign implementation.</li>
+                    </ul><a class="button button-default button-winona" href="about-us.html">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-10 col-lg-7 wow fadeIn text-center" data-wow-delay=".2s"><img src="images/presentation(594x493).jpeg" alt="" width="594" height="493"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials-->
+      <section id="testimonials" class="section section-md-2 text-center bg-white" id="testimonials">
+        <div class="container">
+          <h3>Testimonials</h3>
+          <!-- Isotope-->
+          <div class="isotope-outer">
+            <div class="row row-15 row-md-30 row-xl-40 isotope" data-isotope-layout="masonry">
+              <div class="col-md-6 col-lg-4 isotope-item wow fadeInUpSmall">
+                <!-- Quote Modern-->
+                <blockquote class="quote-modern">
+                  <div class="quote-modern-header">
+                    <div class="quote-modern-info"><img class="quote-modern-avatar" src="images/Annsmith(74x74).jpg" alt="" width="74" height="74"/>
+                      <div class="quote-modern-info-main">
+                        <cite class="quote-modern-cite">Ann Smith</cite>
+                        <p class="quote-modern-position">Regular Client</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-modern-main">
+                    <div class="quote-modern-text">
+                      <p>I would just like to say thank you for your effective online marketing services, for your friendly and professional support and answers to my questions!</p>
+                    </div>
+                    <div class="quote-modern-meta"><a class="quote-modern-link icon mdi mdi-facebook" href="https://www.facebook.com/" target="_blank"></a>
+                      <time class="quote-modern-time" datetime="2019">Mar 24, 2019</time>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="col-md-6 col-lg-4 isotope-item wow fadeInUpSmall" data-wow-delay=".1s">
+                <!-- Quote Modern-->
+                <blockquote class="quote-modern">
+                  <div class="quote-modern-header">
+                    <div class="quote-modern-info"><img class="quote-modern-avatar" src="images/johndoe(74x74).jpg" alt="" width="74" height="74"/>
+                      <div class="quote-modern-info-main">
+                        <cite class="quote-modern-cite">John Doe</cite>
+                        <p class="quote-modern-position">Regular Client</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-modern-main">
+                    <div class="quote-modern-text">
+                      <p>This Agency has been a great help to my marketing efforts for the past several years.</p>
+                    </div>
+                    <div class="quote-modern-meta"><a class="quote-modern-link icon mdi mdi-facebook" href="https://www.facebook.com/" target="_blank"></a>
+                      <time class="quote-modern-time" datetime="2019">Mar 24, 2019</time>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="col-md-6 col-lg-4 isotope-item wow fadeInUpSmall" data-wow-delay=".3s">
+                <!-- Quote Modern-->
+                <blockquote class="quote-modern">
+                  <div class="quote-modern-header">
+                    <div class="quote-modern-info"><img class="quote-modern-avatar" src="images/JanePearson(74x74).webp" alt="" width="74" height="74"/>
+                      <div class="quote-modern-info-main">
+                        <cite class="quote-modern-cite">Jane Pearson</cite>
+                        <p class="quote-modern-position">Regular Client</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote-modern-main">
+                    <div class="quote-modern-text">
+                      <p>Thank you for email marketing services you delivered. You helped my website attract new partners and promote my own services to a greater number of customers.</p>
+                    </div>
+                    <div class="quote-modern-meta"><a class="quote-modern-link icon mdi mdi-facebook" href="https://www.facebook.com/" target="_blank"></a>
+                      <time class="quote-modern-time" datetime="2019">Mar 24, 2019</time>
+                    </div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Clients-->
+      <section class="section section-xxl text-center bg-white" id="clients">
+        <div class="container">
+          <h3>Our Clients</h3>
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-carousel-centered" data-items="2" data-sm-items="3" data-md-items="4" data-lg-items="5" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
+            <div class="wow clipInLeft"><a class="link-image-1" href="https://www.linkedin.com/feed/" target="_blank"><img src="images/Our_client3(88x77).jpeg" alt="" width="88" height="77"/></a></div>
+            <div class="wow clipInLeft" data-wow-delay=".1s"><a class="link-image-1" href="https://www.linkedin.com/feed/" target="_blank"><img src="images/Our_client4(73x78).jpeg" alt="" width="73" height="78"/></a></div>
+            <div class="wow clipInLeft" data-wow-delay=".2s"><a class="link-image-1" href="https://www.linkedin.com/feed/" target="_blank"><img src="images/Our_client5(96x62).jpeg" alt="" width="96" height="62"/></a></div>
+            <div class="wow clipInLeft" data-wow-delay=".3s"><a class="link-image-1" href="https://www.linkedin.com/feed/" target="_blank"><img src="images/Our_client1(78x80).jpeg" alt="" width="78" height="80"/></a></div>
+            <div class="wow clipInLeft" data-wow-delay=".4s"><a class="link-image-1" href="https://www.linkedin.com/feed/" target="_blank"><img src="images/our_client2(87x76) .jpeg" alt="" width="87" height="76"/></a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA-->
+      <section class="section section-sm bg-image bg-accent" id="download">
+        <div class="container">
+          <div class="row row-50justify-content-center justify-content-lg-start align-items-center">
+            <div class="col-lg-7 wow fadeIn" data-wow-delay=".3s">
+              <div class="map">
+                <div class="map-inner"><img class="map-image" src="images/world-map-light.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-5">
+              <h3 class="wow clipInLeft" data-wow-delay=".1s">We Work with Clients All Over the World</h3>
+              <p class="big wow clipInLeft" data-wow-delay=".2s">LeadGen helps clients inside and outside of the US to achieve success by using our services and solutions.</p><a class="button button-primary button-winona button-shadow" href="contacts.html">Get a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page Footer--><img class="banner" src="images/background_footer1920.jpg" alt="" height="0"/></a>
+      <footer class="section footer-classic">
+        <div class="footer-classic-main">
+          <div class="container">
+            <div class="row row-50 justify-content-lg-between">
+              <div class="col-sm-7 col-lg-3 col-xl-2"><a class="brand" href="index.html"><img src="images/logo-default-399x82.png" alt="" width="199" height="41"/></a>
+                <p><span style="max-width: 250px;">Our agency provides quality digital marketing services.</span></p><a class="button button-sm button-default-outline button-winona" href="contacts.html">Get in Touch</a>
+              </div>
+              <div class="col-sm-5 col-lg-3 col-xl-2">
+                <h4 class="footer-classic-title">About</h4>
+                <ul class="list footer-classic-list">
+                  <li><a href="about-us.html">About Us</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-7 col-lg-5 col-xl-3">
+                <h4 class="footer-classic-title">Quick Links</h4>
+                <ul class="list footer-classic-list footer-classic-list_2-cols">
+                  <li><a href="#subscribe-section">Subscribe</a></li>
+                  <li><a href="about-us.html#our-team">Our Team</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="contacts.html#get-in-touch">Pricing</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#sol-services">Services</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5 col-lg-9 col-xl-2">
+                <h4 class="footer-classic-title">Contact Us</h4>
+                <div class="row row-20 row-sm-35">
+                  <div class="col-6 col-sm-12 col-lg-8 col-xl-12">
+                    <div class="row row-10 text-default">
+                      <div class="col-lg-6 col-xl-12"><a href="mailto:#">info@demolink.org</a></div>
+                      <div class="col-lg-6 col-xl-12"><a class="big" href="tel:#">+1-853-234-65</a></div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-12 col-lg-4 col-xl-12 text-right text-sm-left">
+                    <div class="group group-xs"><a class="link link-social-1 mdi mdi-twitter" href="https://x.com/?lang=en" target="_blank"></a><a class="link link-social-1 mdi mdi-facebook" href="https://www.facebook.com/" target="_blank"></a><a class="link link-social-1 mdi mdi-instagram" href="https://www.instagram.com/" target="_blank"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-classic-aside">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
