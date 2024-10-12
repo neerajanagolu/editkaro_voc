@@ -1,0 +1,1 @@
+# editkaro_voc
