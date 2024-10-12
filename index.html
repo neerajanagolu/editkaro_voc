@@ -92,6 +92,7 @@
                 
                 function submitForm() {
                     const email = document.getElementById('subscribe-form-email').value;
+                    const output = $("#form-output-global");
                     if (email && isValidEmail(email)) {
                         const scriptURL = 'https://script.google.com/macros/s/AKfycbwUJdi26PGh6ZI4HHgB5xDb75kSGXAEUDyI6O8ZNB9OKueSyO78ZbAkqYch6XcMSSq4Nw/exec';
                         
@@ -105,8 +106,9 @@
                             body: JSON.stringify({ email: email })
                         })
                         .then(response => {
+                            output.removeClass("active");
                             alert('Thank you for subscribing! Your email has been recorded.');
-                            // document.getElementById('subscribe-form').reset();
+                            document.querySelector('.rd-mailform').reset();
                         })
                         .catch(error => {
                             console.error('Error:', error);
